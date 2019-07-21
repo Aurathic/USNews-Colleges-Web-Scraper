@@ -12,7 +12,8 @@ rvestr (for web scraping), dyplr (for dataframe combination), and openxlsx (for 
 
 ## TODOS
 - Remove redundant information (due to a mix-up in the "university_info_pages.txt", all of the colleges were repeated twice.)
-- Fix the formatting of the file (specifically converting strings to numerics)
+- Fix the formatting of the file (specifically converting strings to numerics and the dots in the column headers)
+- Add comments
 - Add missing information:
   - Information from the 'Computer Resources', 'LD Students' and 'Physically Disabled' subsections from the 'Services' page
   - All of the information on the 'Safety' page 
