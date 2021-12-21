@@ -14520,7 +14520,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>With the importance placed on getting a college degree nowadays (<a href="https://cew.georgetown.edu/cew-reports/americas-divided-recovery/">65 percent of workers have at least some postsecondary education</a>), students more than ever need to focus on getting into colleges that will best help them achieve their goals. Sites like <a href="https://www.usnews.com/best-colleges">US News</a> have become the de-facto standard for students trying to search through hundreds of universities and deciding which is the best fit. Specifically, US News' ranking system is given enormous weight, influencing <a href="https://www.forbes.com/sites/robertzafft/2021/12/07/us-news-business-school-rankings-crucial-but-meaningless/">how schools are perceived by the general public</a>. As such, it's very useful to take a look at these rankings, and the data set from which they are derived, in order to learn more about this driving force in college admissions and hopefully</p>
+<p>With the importance placed on getting a college degree nowadays (<a href="https://cew.georgetown.edu/cew-reports/americas-divided-recovery/">65 percent of workers have at least some postsecondary education</a>), students more than ever need to focus on getting into colleges that will best help them achieve their goals. Sites like <a href="https://www.usnews.com/best-colleges">US News</a> have become the de-facto standard for students trying to search through hundreds of universities and deciding which is the best fit. Specifically, US News' ranking system is given enormous weight, influencing <a href="https://www.forbes.com/sites/robertzafft/2021/12/07/us-news-business-school-rankings-crucial-but-meaningless/">how schools are perceived by the general public</a>. As such, it's very useful to take a look at these rankings, and the data set from which they are derived, in order to learn more about this driving force in college admissions and hopefully learn the patterns behind the data.</p>
 
 </div>
 </div>
@@ -16889,7 +16889,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>I would expect that schools with more Pell Grants would have a higher graduation rate, but the reverse is seen in the data. <strong>TODO WHY</strong></p>
+<p>I would expect that schools with more Pell Grants would have a higher graduation rate, but the reverse is seen in the data. More research is needed to find the explanation for this.</p>
 
 </div>
 </div>
@@ -17320,7 +17320,7 @@ Name: vDisplayScoreInt, dtype: float64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[238]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[252]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">univ_df_num_sat</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s2">&quot;gSat1600ScaleChart_satGridRng1600&quot;</span><span class="p">][</span><span class="s2">&quot;vDisplayScoreInt&quot;</span><span class="p">]</span>
@@ -17339,7 +17339,7 @@ Name: vDisplayScoreInt, dtype: float64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[238]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[252]:</div>
 
 
 
@@ -17368,7 +17368,7 @@ Name: vDisplayScoreInt, dtype: float64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One metric I'm particularly interested in is: Does the ranking done by US News correlate with other metrics of success, like starting salary? Unfortunately, because this scraper doesn't by itself get the data about average salary, I need to supplement this with another web scraper I wrote which directly reads from the webpage (<strong>link</strong>), whose code will not be included here for the sake of brevity.</p>
+<p>One metric I'm particularly interested in is: Does the ranking done by US News correlate with other metrics of success, like starting salary? Unfortunately, because this scraper doesn't by itself get the data about average salary, I need to supplement this with another web scraper I wrote which directly reads from the webpage (<a href="https://github.com/Aurathic/USNews-Colleges-Web-Scraper/blob/master/python_web_scraper/web_scraping.ipynb"><strong>link</strong></a>), whose code will not be included here for the sake of brevity.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -18664,7 +18664,7 @@ Name: vDisplayScoreInt, dtype: float64</pre>
 <li>Generally, higher-ranked colleges are, above all, more selective (i.e. ranking correlates inversely with acceptance rate), and a primary correlation in ranks is the SAT scores of the participating students. This leads us to question whether schools are highly rated because of the schools themselves, or because of the students that go there.</li>
 <li>Even if higher-ranked colleges are more expensive, it's stil worth it go to there because of the competing effects of lower debt rates and higher expected salaries. </li>
 </ul>
-<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>In this project, I collected data from the US News website for college rankings, turned it into a form which can be coralled into a pandas DataFrame, then did various exploratory analysis and prediction to analyze how the ranking metric functions as well as find any other factors to which it relates. I found that there are interesting, nonlinear relationships between the data used for calculating the rankings and the rankings themselves, found other correlating variables which show a strong relationship with rankings, extended the analysis to consider factors like salary and major. There are many possible extensions to this project, including creating a regression that uses holdout sets to avoid overfitting and incorporating other data sets (such as expected salary per major). Either way, there is a wealth of data</p>
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>In this project, I collected data from the US News website for college rankings, turned it into a form which can be coralled into a pandas DataFrame, then did various exploratory analysis and prediction to analyze how the ranking metric functions as well as find any other factors to which it relates. I found that there are interesting, nonlinear relationships between the data used for calculating the rankings and the rankings themselves, found other correlating variables which show a strong relationship with rankings, extended the analysis to consider factors like salary and major. There are many possible extensions to this project, including creating a regression that uses holdout sets to avoid overfitting and incorporating other data sets (such as expected salary per major). Either way, there is a wealth of data that has been found, and the exploration has only begun.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
